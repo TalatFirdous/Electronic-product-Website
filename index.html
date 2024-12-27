@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Products Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .box {
+            background: #ffffff;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+        .box:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .buy-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #35424a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .buy-button:hover {
+            background-color: #2c3e50;
+        }
+        .footer-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .footer-link:hover {
+            color: #f0c14b; /* Amazon's signature yellow color */
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 1 45%; /* Two boxes per row */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                flex: 1 1 100%; /* One box per row */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Electronic Products Website</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="box">
+                <img src="http://i.huffpost.com/gen/1105939/images/o-BEST-PERFORMING-WINDOWS-LAPTOP-facebook.jpg" alt="Laptop" style="width: 100%; border-radius: 10px;">
+                <h3>Laptop</h3>
+                <p>High-performance laptop for all your computing needs.</p>
+                <a href="https://amzn.in/d/0OjfkLE" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="box">
+                <img src="https://static.digit.in/Samsung-Galaxy-M05-with-50MP-camera-launched-in-India-Price-specs-and-more.png" alt="Smartphone" style="width: 100%; border-radius: 10px;">
+                <h3>Smartphone</h3>
+                <p>Latest smartphone with cutting-edge features.</p>
+                <a href="https://amzn.in/d/aAELFuH" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="box">
+                <img src="https://i5.walmartimages.com/asr/c9aa180e-eea5-4049-9317-1e9676a3c2c4.ccf1c8fc260314c8727df5bfbc2df523.jpeg" alt="Tablet" style="width: 100%; border-radius: 10px;">
+                <h3>Tablet</h3>
+                <p>Portable tablet for work and entertainment.</p>
+                <a href="https://amzn.in/d/4MVl8IK" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="box">
+                <img src="https://naxontech.com/wp-content/uploads/2022/02/boAt-Nirvana-751-ANC.jpg" alt="Headphones" style="width: 100%; border-radius: 10px;">
+                <h3>Headphones</h3>
+                <p>Noise-cancelling headphones for an immersive experience.</p>
+                <a href="https://amzn.in/d/9uJKrgu" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="box">
+                <img src="https://m.media-amazon.com/images/I/613Ay8pU9zL.jpg" alt="Smartwatch" style="width: 100%; border-radius: 10px;">
+                <h3>Smartwatch</h3>
+                <p>Smartwatch with fitness tracking and notifications.</p>
+                <a href="https://amzn.in/d/buw2cEE" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="box">
+                <img src="https://www.bhphotovideo.com/images/images2500x2500/nikon_26485_coolpix_l840_digital_camera_1120471.jpg" alt="Camera" style="width: 100%; border-radius: 10px;">
+                <h3>Camera</h3>
+                <p>High-resolution camera for stunning photography.</p>
+                <a href="https://amzn.in/d/7mq6P3W" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Footer Content | <a href="https://www.amazon.com" class="footer-link" target="_blank"><i class="fab fa-amazon"></i> Visit Amazon</a></p>
+    </footer>
+
+</body>
+</html>
